@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Loop Machine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <h1 class="title">Loop Machine</h1>
+  <div class="container">
+    <br>
+    <div class="row">
+      <div class="col col-style">
+        <p class="text">Funk</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Stutter</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Bass</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-style">
+        <audio class="sound" id="funk">
+          <source src="sounds/120_future_funk_beats_25.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="funk" class="btn pad" id="funkButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="stutter">
+          <source src="sounds/120_stutter_breakbeats_16.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="stutter" class="btn pad" id="sutterButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="bass">
+          <source src="sounds/Bass Warwick heavy funk groove on E 120 BPM.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="bass" class="btn pad" id="bassButton">OFF
+      </div>
+      </button>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col col-style">
+        <p class="text">Guitar</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Drums 1</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Darbuka</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-style">
+        <audio class="sound" id="electric">
+          <source src="sounds/electric guitar coutry slide 120bpm - B.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="electric" class="btn pad" id="electricButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="fud">
+          <source src="sounds/FUD_120_StompySlosh.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="fud" class="btn pad" id="fudButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="groove">
+          <source src="sounds/GrooveB_120bpm_Tanggu.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="groove" class="btn pad" id="grooveButton">OFF
+      </div>
+      </button>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col col-style">
+        <p class="text">Maze Politics</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Drums 2</p>
+      </div>
+      <div class="col col-style">
+        <p class="text">Silent Star</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-style">
+        <audio class="sound" id="MazePolitics">
+          <source src="sounds/MazePolitics_120_Perc.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="MazePolitics" class="btn pad" id="mazeButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="pas">
+          <source src="sounds/PAS3GROOVE1.03B.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="pas" class="btn pad" id="pasButton">OFF
+      </div>
+      <div class="col col-style">
+        <audio class="sound" id="SilentStar">
+          <source src="sounds/SilentStar_120_Em_OrganSynth.mp3" type="audio/mp3">
+        </audio>
+
+        <button type="button" data-note="SilentStar" class="btn pad" id="starButton">OFF
+      </div>
+      </button>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-dark bottomButton" id="play">Play &#9655;
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-danger bottomButton" id="stop">Stop &#9634;
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-outline-danger bottomButton" id="record">Record &#9673;
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-warning bottomButton" id="session">Play Session
+      </div>
+    </div>
+
+  </div>
+  <div class="title" id="text"></div>
+</body>
+
+</html>
